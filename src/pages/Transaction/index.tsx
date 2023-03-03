@@ -2,35 +2,15 @@ import { Header } from "../../components/Header";
 import { SearchForm } from "./components/SearchForm";
 import { Summary } from "../../components/Summary";
 import {
-  PriceHighlight,
+  ValueHighlight,
   TransactionsContainer,
   TransactionsTable,
 } from "./style";
-import { useEffect, useState } from "react";
-
-interface Transaction {
-  id: number;
-  description: string;
-  type: "income" | "outcome";
-  price: number;
-  category: string;
-  createdAt: string;
-}
+import { useContext } from "react";
+import { TransactionsContext } from "../../contexts/TransactionContext";
 
 export function Transaction() {
-  const [transactions, setTransactions] = useState<Transaction[]>([]);
-
-  async function loadTransaction() {
-    const response = await fetch("http://localhost:3000/transactions");
-    const data = await response.json();
-
-    setTransactions(data);
-  }
-
-  useEffect(() => {
-    loadTransaction();
-  }),
-    [];
+  const { transactions } = useContext(TransactionsContext);
 
   return (
     <>
@@ -47,9 +27,9 @@ export function Transaction() {
                 <tr key={transaction.id}>
                   <td width="50%">{transaction.description}</td>
                   <td>
-                    <PriceHighlight variant={transaction.type}>
-                      {transaction.price}
-                    </PriceHighlight>
+                    <ValueHighlight variant={transaction.type}>
+                      {transaction.value}
+                    </ValueHighlight>
                   </td>
                   <td>{transaction.category}</td>
                   <td>{transaction.createdAt}</td>
