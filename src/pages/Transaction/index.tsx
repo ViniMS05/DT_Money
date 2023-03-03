@@ -8,6 +8,7 @@ import {
 } from "./style";
 import { useContext } from "react";
 import { TransactionsContext } from "../../contexts/TransactionContext";
+import { dateFormatter, priceFormatter } from "../../utils/formatter";
 
 export function Transaction() {
   const { transactions } = useContext(TransactionsContext);
@@ -28,11 +29,14 @@ export function Transaction() {
                   <td width="50%">{transaction.description}</td>
                   <td>
                     <ValueHighlight variant={transaction.type}>
-                      {transaction.value}
+                      {transaction.type === "outcome" && "- "}
+                      {priceFormatter.format(transaction.value)}
                     </ValueHighlight>
                   </td>
                   <td>{transaction.category}</td>
-                  <td>{transaction.createdAt}</td>
+                  <td>
+                    {dateFormatter.format(new Date(transaction.createdAt))}
+                  </td>
                 </tr>
               );
             })}

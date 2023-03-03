@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "value": 14000,
+      "createdAt": "2023-03-03T13:30:27.644Z"
+    },
+    {
+      "id": 2,
+      "description": "Fone de Ouvido",
+      "type": "outcome",
+      "category": "Compra",
+      "value": 100,
+      "createdAt": "2023-03-03T13:30:27.644Z"
+    },
+    {
+      "id": 3,
+      "description": "PS5",
+      "type": "outcome",
+      "category": "Entretenimento",
+      "value": 4900,
+      "createdAt": "2023-03-03T13:30:27.644Z"
+    }
+  ]
+}
