@@ -23,6 +23,30 @@
       "category": "Entretenimento",
       "value": 4999.99,
       "createdAt": "2023-03-03T13:30:27.644Z"
+    },
+    {
+      "description": "Desenvolvimento de App",
+      "value": 3000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-03-03T16:49:20.156Z",
+      "id": 4
+    },
+    {
+      "description": "Porção de Frango",
+      "value": 100,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-03T17:08:23.867Z",
+      "id": 5
+    },
+    {
+      "description": "Conta de Luz",
+      "value": 400,
+      "category": "Contas",
+      "type": "outcome",
+      "createdAt": "2023-03-03T17:08:53.192Z",
+      "id": 6
     }
   ]
 }
