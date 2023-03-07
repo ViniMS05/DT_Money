@@ -71,6 +71,22 @@
       "type": "outcome",
       "createdAt": "2023-03-06T13:06:51.894Z",
       "id": 9
+    },
+    {
+      "description": "Balas de goma",
+      "value": 50,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-03-07T17:00:54.400Z",
+      "id": 10
+    },
+    {
+      "description": "Conta de Luz",
+      "value": 230,
+      "category": "Contas",
+      "type": "income",
+      "createdAt": "2023-03-07T17:10:08.441Z",
+      "id": 11
     }
   ]
 }
