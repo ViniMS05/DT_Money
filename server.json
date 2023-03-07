@@ -47,6 +47,30 @@
       "type": "outcome",
       "createdAt": "2023-03-03T17:08:53.192Z",
       "id": 6
+    },
+    {
+      "description": "Conta de Agua",
+      "value": 400,
+      "category": "Contas",
+      "type": "outcome",
+      "createdAt": "2023-03-06T11:53:51.700Z",
+      "id": 7
+    },
+    {
+      "description": "SSD",
+      "value": 200,
+      "category": "Manutenção",
+      "type": "outcome",
+      "createdAt": "2023-03-06T12:19:16.596Z",
+      "id": 8
+    },
+    {
+      "description": "HD",
+      "value": 300,
+      "category": "Manutenção",
+      "type": "outcome",
+      "createdAt": "2023-03-06T13:06:51.894Z",
+      "id": 9
     }
   ]
 }
