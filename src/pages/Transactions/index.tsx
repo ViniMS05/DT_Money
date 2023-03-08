@@ -14,6 +14,7 @@ import { useContextSelector } from 'use-context-selector'
 import { DeleteTransactionAlert } from './components/DeleteTransactionAlert'
 import * as AlertDialog from '@radix-ui/react-alert-dialog'
 import { Trash } from 'phosphor-react'
+import { Pagination } from '../../components/Pagination'
 
 export function Transactions() {
   const transactions = useContextSelector(TransactionsContext, (context) => {
@@ -33,7 +34,7 @@ export function Transactions() {
             {transactions.map((transaction) => {
               return (
                 <tr key={transaction.id}>
-                  <td width="50%">{transaction.description}</td>
+                  <td width="40%">{transaction.description}</td>
                   <td>
                     <ValueHighlight variant={transaction.type}>
                       {transaction.type === 'outcome' && '- '}
@@ -58,6 +59,8 @@ export function Transactions() {
           </tbody>
         </TransactionsTable>
       </TransactionsContainer>
+
+      <Pagination />
     </>
   )
 }

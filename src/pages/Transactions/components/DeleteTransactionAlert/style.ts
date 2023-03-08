@@ -26,18 +26,22 @@ export const Content = styled(AlertDialog.Content)`
   gap: 1rem;
 
   color: ${(props) => props.theme['gray-100']};
+
+  hr {
+    height: 2px;
+    border: 0;
+    background-color: ${(props) => props.theme['green-500']};
+  }
 `
 
 export const FlexButtons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-top: 1rem;
 `
 
 export const CancelButton = styled(AlertDialog.Cancel)`
-  background: transparent;
+  background: ${(props) => props.theme['gray-700']};
   border: 0;
   border-radius: 6px;
   cursor: pointer;
@@ -45,8 +49,13 @@ export const CancelButton = styled(AlertDialog.Cancel)`
   font-weight: bold;
   padding: 0.5rem;
 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
   &:hover {
     color: ${(props) => props.theme.white};
+    background: ${(props) => props.theme['gray-600']};
     transition: color 0.2s;
   }
 `

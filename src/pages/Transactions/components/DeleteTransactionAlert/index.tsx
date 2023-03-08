@@ -1,5 +1,5 @@
 import * as AlertDialog from '@radix-ui/react-alert-dialog'
-import { Trash } from 'phosphor-react'
+import { Trash, X } from 'phosphor-react'
 import { useContextSelector } from 'use-context-selector'
 import { TransactionsContext } from '../../../../contexts/TransactionContext'
 import {
@@ -17,12 +17,17 @@ interface DeleteTransactionProps {
 export function DeleteTransactionAlert({
   transactionId,
 }: DeleteTransactionProps) {
-  const deleteTransaction = useContextSelector(
+  const { deleteTransaction, fetchTransactions } = useContextSelector(
     TransactionsContext,
     (context) => {
-      return context.deleteTransaction
+      return context
     },
   )
+
+  function handleDeleteTransaction(id: number) {
+    deleteTransaction(id)
+    fetchTransactions()
+  }
 
   return (
     <AlertDialog.Portal>
@@ -33,17 +38,21 @@ export function DeleteTransactionAlert({
           Você tem certeza que deseja excluir está transação?
         </AlertDialog.Title>
         <AlertDialog.Description>
-          <p>Ao excluir a transação ela será completamente perdida.</p>
-          <p>
-            Não será possivel recupera-la, a não ser que você crie uma nova
-            transação.
-          </p>
+          Ao excluir a transação ela será completamente perdida.
+          <br />
+          Não será possivel recupera-la, a não ser que você crie uma nova
+          transação.
         </AlertDialog.Description>
 
-        <FlexButtons>
-          <CancelButton>Cancelar</CancelButton>
+        <hr />
 
-          <DeleteButton onClick={() => deleteTransaction(transactionId)}>
+        <FlexButtons>
+          <CancelButton>
+            <X size={24} />
+            Cancelar
+          </CancelButton>
+
+          <DeleteButton onClick={() => handleDeleteTransaction(transactionId)}>
             <Trash size={24} />
             Excluir
           </DeleteButton>

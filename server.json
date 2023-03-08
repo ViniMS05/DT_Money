@@ -6,7 +6,7 @@
       "category": "Venda",
       "type": "income",
       "createdAt": "2023-03-08T12:16:00.107Z",
-      "id": 2
+      "id": 1
     },
     {
       "description": "Conta de Luz",
@@ -14,7 +14,7 @@
       "category": "Conta",
       "type": "outcome",
       "createdAt": "2023-03-08T13:25:55.082Z",
-      "id": 3
+      "id": 2
     },
     {
       "description": "PS5",
@@ -22,79 +22,55 @@
       "category": "Entretenimento",
       "type": "outcome",
       "createdAt": "2023-03-08T13:27:13.696Z",
-      "id": 5
+      "id": 14
     },
     {
-      "description": "Lanche",
+      "description": "Conta de Luz",
+      "value": 400,
+      "category": "Conta",
+      "type": "outcome",
+      "createdAt": "2023-03-08T16:36:25.843Z",
+      "id": 15
+    },
+    {
+      "description": "Shopping",
+      "value": 200,
+      "category": "Entretenimento",
+      "type": "outcome",
+      "createdAt": "2023-03-08T16:36:46.145Z",
+      "id": 16
+    },
+    {
+      "description": "Memória RAM",
+      "value": 200,
+      "category": "Manutenção",
+      "type": "outcome",
+      "createdAt": "2023-03-08T16:38:07.625Z",
+      "id": 17
+    },
+    {
+      "description": "Dentista",
+      "value": 100,
+      "category": "Saúde",
+      "type": "outcome",
+      "createdAt": "2023-03-08T16:38:34.505Z",
+      "id": 18
+    },
+    {
+      "description": "Academia",
+      "value": 100,
+      "category": "Saúde",
+      "type": "outcome",
+      "createdAt": "2023-03-08T16:38:55.985Z",
+      "id": 19
+    },
+    {
+      "description": "McDonalds",
       "value": 50,
       "category": "Alimentação",
       "type": "outcome",
-      "createdAt": "2023-03-08T13:29:35.948Z",
-      "id": 6
-    },
-    {
-      "description": "Lanche",
-      "value": 50,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2023-03-08T13:29:35.948Z",
-      "id": 6
-    },
-    {
-      "description": "Lanche",
-      "value": 50,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2023-03-08T13:29:35.948Z",
-      "id": 6
-    },
-    {
-      "description": "Lanche",
-      "value": 50,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2023-03-08T13:29:35.948Z",
-      "id": 6
-    },
-    {
-      "description": "Lanche",
-      "value": 50,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2023-03-08T13:29:35.948Z",
-      "id": 6
-    },
-    {
-      "description": "Lanche",
-      "value": 50,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2023-03-08T13:29:35.948Z",
-      "id": 6
-    },
-    {
-      "description": "Lanche",
-      "value": 50,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2023-03-08T13:29:35.948Z",
-      "id": 6
-    },
-    {
-      "description": "Lanche",
-      "value": 50,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2023-03-08T13:29:35.948Z",
-      "id": 6
-    },
-    {
-      "description": "Lanche",
-      "value": 50,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2023-03-08T13:29:35.948Z",
-      "id": 6
+      "createdAt": "2023-03-08T16:42:18.339Z",
+      "id": 20
     }
   ]
 }
