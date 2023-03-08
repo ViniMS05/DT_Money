@@ -1,92 +1,100 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "description": "Desenvolvimento de site",
-      "type": "income",
-      "category": "Venda",
-      "value": 14000,
-      "createdAt": "2023-03-03T13:30:27.644Z"
-    },
-    {
-      "id": 2,
-      "description": "Fone de Ouvido",
-      "type": "outcome",
-      "category": "Compra",
-      "value": 100,
-      "createdAt": "2023-03-03T13:30:27.644Z"
-    },
-    {
-      "id": 3,
-      "description": "PS5",
-      "type": "outcome",
-      "category": "Entretenimento",
-      "value": 4999.99,
-      "createdAt": "2023-03-03T13:30:27.644Z"
-    },
-    {
       "description": "Desenvolvimento de App",
-      "value": 3000,
+      "value": 10000,
       "category": "Venda",
       "type": "income",
-      "createdAt": "2023-03-03T16:49:20.156Z",
-      "id": 4
+      "createdAt": "2023-03-08T12:16:00.107Z",
+      "id": 2
     },
     {
-      "description": "Porção de Frango",
-      "value": 100,
-      "category": "Alimentação",
+      "description": "Conta de Luz",
+      "value": 400,
+      "category": "Conta",
       "type": "outcome",
-      "createdAt": "2023-03-03T17:08:23.867Z",
+      "createdAt": "2023-03-08T13:25:55.082Z",
+      "id": 3
+    },
+    {
+      "description": "PS5",
+      "value": 4500,
+      "category": "Entretenimento",
+      "type": "outcome",
+      "createdAt": "2023-03-08T13:27:13.696Z",
       "id": 5
     },
     {
-      "description": "Conta de Luz",
-      "value": 400,
-      "category": "Contas",
+      "description": "Lanche",
+      "value": 50,
+      "category": "Alimentação",
       "type": "outcome",
-      "createdAt": "2023-03-03T17:08:53.192Z",
+      "createdAt": "2023-03-08T13:29:35.948Z",
       "id": 6
     },
     {
-      "description": "Conta de Agua",
-      "value": 400,
-      "category": "Contas",
-      "type": "outcome",
-      "createdAt": "2023-03-06T11:53:51.700Z",
-      "id": 7
-    },
-    {
-      "description": "SSD",
-      "value": 200,
-      "category": "Manutenção",
-      "type": "outcome",
-      "createdAt": "2023-03-06T12:19:16.596Z",
-      "id": 8
-    },
-    {
-      "description": "HD",
-      "value": 300,
-      "category": "Manutenção",
-      "type": "outcome",
-      "createdAt": "2023-03-06T13:06:51.894Z",
-      "id": 9
-    },
-    {
-      "description": "Balas de goma",
+      "description": "Lanche",
       "value": 50,
-      "category": "Venda",
-      "type": "income",
-      "createdAt": "2023-03-07T17:00:54.400Z",
-      "id": 10
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-08T13:29:35.948Z",
+      "id": 6
     },
     {
-      "description": "Conta de Luz",
-      "value": 230,
-      "category": "Contas",
-      "type": "income",
-      "createdAt": "2023-03-07T17:10:08.441Z",
-      "id": 11
+      "description": "Lanche",
+      "value": 50,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-08T13:29:35.948Z",
+      "id": 6
+    },
+    {
+      "description": "Lanche",
+      "value": 50,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-08T13:29:35.948Z",
+      "id": 6
+    },
+    {
+      "description": "Lanche",
+      "value": 50,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-08T13:29:35.948Z",
+      "id": 6
+    },
+    {
+      "description": "Lanche",
+      "value": 50,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-08T13:29:35.948Z",
+      "id": 6
+    },
+    {
+      "description": "Lanche",
+      "value": 50,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-08T13:29:35.948Z",
+      "id": 6
+    },
+    {
+      "description": "Lanche",
+      "value": 50,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-08T13:29:35.948Z",
+      "id": 6
+    },
+    {
+      "description": "Lanche",
+      "value": 50,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-08T13:29:35.948Z",
+      "id": 6
     }
   ]
 }

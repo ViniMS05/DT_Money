@@ -1,3 +1,4 @@
+import * as AlertDialog from '@radix-ui/react-alert-dialog'
 import styled from 'styled-components'
 
 export const TransactionsContainer = styled.main`
@@ -27,6 +28,23 @@ export const TransactionsTable = styled.table`
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px;
     }
+  }
+`
+
+export const DeleteButton = styled(AlertDialog.Trigger)`
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 0;
+  text-align: center;
+
+  color: ${(props) => props.theme['gray-300']};
+
+  &:hover {
+    color: ${(props) => props.theme['red-300']};
+
+    transition: color 0.1s;
   }
 `
 

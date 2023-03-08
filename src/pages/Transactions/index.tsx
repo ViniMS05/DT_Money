@@ -5,11 +5,15 @@ import {
   ValueHighlight,
   TransactionsContainer,
   TransactionsTable,
+  DeleteButton,
 } from './style'
 
 import { TransactionsContext } from '../../contexts/TransactionContext'
 import { dateFormatter, priceFormatter } from '../../utils/formatter'
 import { useContextSelector } from 'use-context-selector'
+import { DeleteTransactionAlert } from './components/DeleteTransactionAlert'
+import * as AlertDialog from '@radix-ui/react-alert-dialog'
+import { Trash } from 'phosphor-react'
 
 export function Transactions() {
   const transactions = useContextSelector(TransactionsContext, (context) => {
@@ -39,6 +43,14 @@ export function Transactions() {
                   <td>{transaction.category}</td>
                   <td>
                     {dateFormatter.format(new Date(transaction.createdAt))}
+                  </td>
+                  <td>
+                    <AlertDialog.Root>
+                      <DeleteButton>
+                        <Trash size={24} weight="bold" />
+                      </DeleteButton>
+                      <DeleteTransactionAlert transactionId={transaction.id} />
+                    </AlertDialog.Root>
                   </td>
                 </tr>
               )
