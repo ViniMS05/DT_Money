@@ -2,11 +2,14 @@ import { useContextSelector } from 'use-context-selector'
 import { TransactionsContext } from '../contexts/TransactionContext'
 
 export function useSummary() {
-  const transactions = useContextSelector(TransactionsContext, (context) => {
-    return context.transactions
-  })
+  const totalTransactions = useContextSelector(
+    TransactionsContext,
+    (context) => {
+      return context.totalTransactions
+    },
+  )
 
-  const summary = transactions.reduce(
+  const summary = totalTransactions.reduce(
     (acc, transaction) => {
       if (transaction.type === 'income') {
         acc.income += transaction.value

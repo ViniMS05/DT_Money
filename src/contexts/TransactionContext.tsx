@@ -22,6 +22,7 @@ interface TransactionsContextType {
   transactions: Transactions[]
   pages: number[]
   currentPage: number
+  totalTransactions: Transactions[]
   fetchTransactions: (query?: string) => Promise<void>
   createTransaction: (data: CreateTransactionInput) => Promise<void>
   deleteTransaction: (id: number) => void
@@ -118,6 +119,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     <TransactionsContext.Provider
       value={{
         transactions,
+        totalTransactions,
         fetchTransactions,
         createTransaction,
         deleteTransaction,
